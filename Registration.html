@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DES322_6222790345_Mockup_Registration</title>
+    <!-- 
+        DES322 Exam Project
+        
+        HOME PAGE
+
+        StudentID: 6222790345
+        Student Name: Time Kitilimtrakul
+        TA Group: G8 Asadang Tanatipuknon
+        Digital Business: Online Sneaker Store
+        Created Date: 24-10-2021
+    -->
+    <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <!-- jQuery and BootStrap Bundle (includes Popper)-->
+        
+
+
+    <style>
+        .access-point-1 {border: 1px solid black; display:flex; text-align: center;}
+        .access-point-2 {padding: 10px; text-align: center; background-color: lightgrey;}
+        .access-point-3 {border: none; padding: 5px; text-align: center; background-color: white;}
+        .hd-container{display: flex; justify-content: center; margin:0px;}
+        .hd-child{flex: 1; padding:20px;}
+        .clearfix{content: ""; display: block; clear: both; padding:10px;}
+        .input_field{margin-bottom:20px; width:100%;}
+        .form_wrapper {
+            background: #fff;
+            width: 800px;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 25px;
+            margin: 2% auto 0;
+            margin-bottom: 2%;
+            position: relative;
+            z-index: 1;
+            border-top: 5px solid lightgrey;
+            border-bottom: 5px solid lightgrey;
+        }
+
+        .label {
+            margin-right: 1em;
+            content: "";
+            display: inline-block;
+            width: 0.5em;
+            height: 0.5em;
+            margin-right: 0.5em;
+            border-radius: 100%;
+            vertical-align: -3px;
+            padding: 0.15em;
+        }
+
+        .select_option {
+        position: relative;
+        width: 100%;}
+        .select {
+            display: inline-block;
+            width: 100%;
+            height: 35px;
+            padding: 0px 15px;
+            cursor: pointer;
+            color: #7b7b7b;
+            border-radius: 0;
+            background: #fff;
+        }
+    </style>
+
+</head>
+
+<header class="bg-light text-black">
+    <div class="hd-container" style="padding-left:50px; padding-right:50px;">
+        <div class="hd-child">
+            <div class="text-left">
+                <div class="logo">
+                    <a href="./homepage2.html" class="headerlogo" style = "text-decoration: none;">
+                        <img src="./images/IIcon-02.jpg" width="80" height="80"></img>
+                    </a>
+                </div>
+                <div class="text-left">
+                    <ul class="downdown" style="padding:0px">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Basketball</a>
+                            <a class="dropdown-item" href="#">Tennis</a>
+                            <a class="dropdown-item" href="#">Trecking</a>
+                            <a class="dropdown-item" href="#">Fashion</a>
+                        </div>       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="hd-child" style="flex:2; justify-content: center;">
+            <h1 style="text-align: center">Sneaky Sneakers</h1>
+            <form>
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+
+        <div class="hd-child" style="justify-content: flex-end;">
+            <div class="text-right">
+                <button type="button" class="btn btn-outline-dark me-2">Login</button>
+                <button type="button" class="btn btn-dark">Sign-up</button>
+            </div>
+            <div class="text-right" style="margin-top:10px;">
+                <a href="./homepage2.html" class="headerlogo" style = "text-decoration: none;">
+                    <img src="./images/shop.jpg" width="50" height="50"></img>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container-fluid">
+        <div class="form_wrapper" style="justify-content:center; text-align: center; align-items: center; padding:40px;">
+            <div class="form_container">
+            <div class="title_container">
+                <h2>Register to Sneaky Sneakers</h2>
+            </div>
+            <div class="row clearfix" style="text-align: center; align-items: center;">
+                <div class="">
+                <form>
+                    <div class="row clearfix">
+                    <div class="col_half">
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                        <input type="text" name="name" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="col_half">
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                        <input type="text" name="name" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    </div>
+                    <div class="input_field radio_option">
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1">Male</label>
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2">Female</label>
+                    </div>
+                    <div class="input_field"> <span><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                        <input type="date" id="birthday" name="birthday">
+                    </div>
+
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                        <input type="email" name="email" placeholder="Email" required/>
+                    </div>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                        <input type="password" name="password" placeholder="Password" required />
+                    </div>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                        <input type="password" name="password" placeholder="Re-type Password" required />
+                    </div>
+                    <div class="input_field checkbox_option">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1">I agree with terms and conditions</label>
+                    </div>
+                    <div class="input_field checkbox_option">
+                        <input type="checkbox" id="cb2">
+                        <label for="cb2">I want to receive the newsletter</label>
+                    </div>
+                    <input class="button" type="submit" value="Register" />
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div name = "site-footer" class = "access-point-1 bg-dark text-white" style="padding-left:50px; padding-right:50px;">
+        <div class="hd-child">
+            <div class="signup text-left">
+                <button type="button" class="btn btn-secondary">Sign Up For Special Offers</button>
+                <button type="button" class="btn btn-secondary">Email</button>
+            </div>
+            <div class="contactus text-left" style="padding-top:5px;">
+                <button type="button" class="btn btn-secondary">Contact Us</button>
+            </div>
+        </div>
+        <div class="hd-child text-right" style="flex:3;">
+            <div class="stable" style="font-size:40px;">
+                <a href="#"><i class="icon ion-social-facebook" style="color:lightgrey;"></i></a>
+                <a href="#"><i class="icon ion-social-twitter" style="color:lightgrey;"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat" style="color:lightgrey;"></i></a>
+                <a href="#"><i class="icon ion-social-instagram" style="color:lightgrey;"></i></a>
+                <p class="copyright" style="font-size: 8px;">Sneaky Sneakers © 2021</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
